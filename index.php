@@ -16,8 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // TODO 2: The password is stored exactly as typed. Turn it into a
         //         one-way hash with password_hash() and store the hash instead.
-        // Always Unquie to the time Created
-        // Should show a jumbled and unqui password
         $stored = password_hash($password, PASSWORD_DEFAULT);
         
         try {
@@ -28,7 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
